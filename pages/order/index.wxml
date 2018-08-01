@@ -1,0 +1,51 @@
+<!--pages/order/index.wxml-->
+<!--index.wxml-->
+<view class="container">
+  
+  <view class="usermotto">
+    <text class="user-motto">历史交易列表</text>
+  </view>
+
+  <view class="userinfo">
+    <input type='text' placeholder='请输入交易订单编号'></input>
+    <button bindtap='selectOrderInfo'> 查询 </button>
+  </view>
+
+  <view>
+    <view>
+      <view>
+        <text> 服务ID：1 </text>
+      </view>
+      <view>
+        <text> 服务名称：服务1 </text>
+      </view>
+      <view>
+        <text> 服务开始日期：2018年1月1日 </text>
+      </view>
+      <view>
+        <text> 服务结束日期：2057年12月31日 </text>
+      </view>
+      <view>
+        <text> 交易金额：0.40元 </text>
+      </view>
+    </view>
+
+    <view>
+      <view>
+        <text> 服务ID：1 </text>
+      </view>
+      <view>
+        <text> 服务名称：服务1 </text>
+      </view>
+      <view>
+        <text> 服务开始日期：2058年1月1日 </text>
+      </view>
+      <view>
+        <text> 服务结束日期：2080年12月31日 </text>
+      </view>
+      <view>
+        <text> 交易金额：0.22元 </text>
+      </view>
+    </view>
+  </view>
+</view>

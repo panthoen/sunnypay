@@ -1,0 +1,27 @@
+<!--pages/shop/shoplist.wxml-->
+<!--index.wxml-->
+<view class="container">
+  
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="usermotto">
+    <input placeholder='请输入完整的店铺名称' type='text' bindinput='bindKeyInput' value="{{selectshopname}}"></input>
+    <button bindtap='selectShopInfo'>查询</button>
+  </view>
+  <view wx-if="{{shopinfo}}">
+    <view>
+      <text>{{shopinfo.id}}</text>
+    </view>
+    <view>
+      <text>{{shopinfo.name}}</text>
+    </view>
+    <view>
+      <text>{{shopinfo.addr}}</text>
+    </view>
+    <view>
+      <text>{{shopinfo.mobile}}</text>
+    </view>
+    <button bindtap='bindShopInfo'>绑定该药店</button>
+  </view>
+</view>

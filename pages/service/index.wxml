@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view class="usermotto">
+    <text class="user-motto">服务列表</text>
+  </view>
+
+  <view>
+    <text> 已购买的服务 </text>
+    <view>
+      <view>
+        <text> 编号：1 </text>
+      </view>
+      <view>
+        <text> 服务名称：服务1 </text>
+      </view>
+      <view>
+        <text> 到期日期：2080年12月31日 </text>
+      </view>
+      <view>
+        <text> 店铺：XX店铺 </text>
+      </view>
+      <view>
+        <button bindtap='buyServiceFun'>续费</button>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <text> 未购买的服务 </text>
+    <view>
+      <view>
+        <text> 编号：2 </text>
+      </view>
+      <view>
+        <text> 服务名称：服务2 </text>
+      </view>
+      <view>
+        <text> 服务内容：跑跑腿 </text>
+      </view>
+      <view>
+        <text> 价格：1分钱1年 </text>
+      </view>
+      <view>
+        <button bindtap='buyServiceFun'>购买</button>
+      </view>
+    </view>
+
+    <view>
+      <view>
+        <text> 编号：3 </text>
+      </view>
+      <view>
+        <text> 服务名称：服务3 </text>
+      </view>
+      <view>
+        <text> 服务内容：端茶倒水 </text>
+      </view>
+      <view>
+        <text> 价格：2分钱1年 </text>
+      </view>
+      <view>
+        <button bindtap='buyServiceFun'>购买</button>
+      </view>
+    </view>
+
+  </view>
+</view>

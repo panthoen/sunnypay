@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view  wx:if="{{!hasUserInfo && canIUse}}" class="userinfo">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
+  </view>
+  <block wx:else>
+    <view class="headview">
+      <view class="userhead">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+    </view>
+    <view class="shophead">
+      <button wx:if='{{!shopinfo}}' bindtap='TabShopPage' > 绑定店铺信息 </button>
+      <view wx:if='{{shopinfo}}'>
+        <view>
+          <text> {{shopinfo.name}} </text>
+        </view>
+        <view>
+          <text> {{shopinfo.addr}} </text>
+        </view>
+        <view>
+          <text> {{shopinfo.mobile}} </text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view  wx:if="{{hasUserInfo && shopinfo}}"  class="footdiv">
+    <button class="footbuy" bindtap='TabBuyServicePage' > 购买服务 </button>
+    <button class="footorders" bindtap='TabOrderListPage' > 历史交易 </button>
+    <button class="footme" bindtap='TabAboutMePage' > 关于我们 </button>
+  </view>
+
+</view>
